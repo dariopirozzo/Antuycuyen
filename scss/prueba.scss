@@ -1,0 +1,140 @@
+
+@mixin texto{
+  font-family: 'oswald', sans-serif;
+  font-size:1.25em;
+}
+@mixin tam{
+  height: 100%;
+  width: 100%;
+}
+@mixin espacio{
+  margin-top:72px;
+  margin-bottom:72px;
+}
+
+#vintage{
+  background-color:#86f7ac;
+}
+
+html{
+  padding:0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1116px;
+  width: 1366px;
+
+}
+body{
+    background-image: url(../img/frente.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @include tam;
+}
+  .colo__rosa{
+    background-color: #f98989;
+  }
+.encabezado {
+  background-color :rgb(224, 70, 68);
+	}
+.encabezado__menu {
+  @include texto;
+	}
+
+.encabezado__logo2 {
+   @include tam;
+   position: relative;
+   left: 600px;
+}
+.descripciones { 
+ @include texto;
+ @include espacio;
+     background-color: rgba(213,213,213,50%);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+
+	}
+.descripciones__Intro{
+  @include texto;
+   background-color: rgba(213,213,213,50%);
+   border-radius: 5%;
+	 width: 600px;
+   height: 200px;
+	 border: 2px solid #e04644 ;
+	 padding: 5px;
+   margin: 20px 10px 5px 20px;
+	 overflow: hidden;
+	}
+  .descripcion{
+    @include texto;
+    @include espacio;
+    background-color: rgba(213,213,213,50%);
+    border-radius: 10%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    
+  }
+.pie{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 2em;
+    display:grid;
+    padding: 2px;
+   grid-template-areas: 
+   "consulta consulta consulta"
+   "nombre nombre texto" 
+   "mail check texto" 
+   "modelo modelo texto" 
+   "boton boton boton";
+   grid-template-rows: 40px auto auto auto auto;
+   grid-template-columns: 2fr 5fr 4fr;
+   grid-column-gap: 2px;
+   grid-row-gap: 2px;
+  border: 2px solid #989898 ;
+}
+
+ .a { grid-area:nombre; background-color:#d5d5d5;  }
+ .b { grid-area:mail; background-color:#d5d5d5;  }
+ .c { grid-area:check; background-color:#d5d5d5;  }
+ .d { grid-area:modelo;background-color:#d5d5d5;   }
+ .e { grid-area: texto; background-color:#989898;  }
+ .f { grid-area: boton; background-color:#d5d5d5;  }
+.g{grid-area:consulta; background-color:#d5d5d5;}
+
+.descripcion__producto{
+	 border-radius: 5%;
+	 border:2px solid #e04644;
+   padding: 10px;
+	 margin: 20px 10px 5px 20px;
+  @include texto;
+	 overflow: hidden;
+	}
+  .descripcion__producto__vintage{
+   border-radius: 5%;
+   border:2px solid #86f7ac;
+   padding: 10px;
+   margin: 20px 10px 5px 20px;
+  @include texto;
+   overflow: hidden;
+  }
+  
+ .espacio{
+  padding: 0px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+  border:38px solid #e04644;
+  border-radius: 5%;
+ }
+  .espacio__vintage{
+  padding: 0px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+  border:38px solid #86f7ac;
+  border-radius: 5%;
+ }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}

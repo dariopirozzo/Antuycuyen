@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+          <link rel="stylesheet" href="css/estilos.css">
+          <title>vintage</title>
+    </head>
+  <body >
+  <!-- navegacion -->
+     <div class="navbar navbar-expand-lg navbar-dark " id="vintage">
+      <a class="navbar-brand">
+        <img class="encabezado__logo" src="img/logo.jpg" alt="logo" height="100">
+      </a>
+      
+        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon">
+            
+          </span>
+        </button>
+         <div class="collapse navbar-collapse " id="menu" id="vintage">
+            <ul class="navbar-nav mr-auto ">     
+               <li class="btn btn-outline-success" class="nav-item active"> <a href="index.html" class="nav-link">Inicio</a></li>
+               <li class="btn btn-outline-success"class="nav-item active"> <a href="nosotros.html" class="nav-link">Nosotros</a></li>
+               <li class="btn btn-outline-success"class="nav-item active"> <a href="algarrobo.html" class="nav-link">Algarrobo</a></li>
+               <li class="btn btn-outline-success"class="nav-item active"> <a href="vintage.html" class="nav-link">Vintage</a></li>
+               <li class="btn btn-outline-success"class="nav-item active"> <a href="secciona.html" class="nav-link">Clientes</a></li>
+               
+          </ul>  
+         </div>             
+     </div>
+     <!--Texto -->
+     <div class="descripcion ">
+        <p class="descripcion__producto__vintage"> A principos del 2021, desdpues de mucho trabajo incorporamos otro tipo de muebles a nuestra empresa, son muebles de pino, con un tratamiento super moderno, ideal para lugares contemporaneos y gente muy exigente !</p>
+     </div>
+     <!-- Carousel -->
+     <div class="container espacio__vintage">
+  <div class="row">
+
+ <div class="col-12">
+     <div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/modular.png" alt="Modular">
+    </div>
+    <div class="carousel-item">
+      <img src="img/modular.png" alt="Modular">
+    </div>
+    <div class="carousel-item">
+      <img src="img/modular.png" alt="Modular">
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+   
+ </div>
+  </div>
+</div>
+   <!-- Pie de pagina -->
+      <form class=" pie">
+     <div class="g">Dejanos tu consulta!</div>
+     <div class="a ">
+        <label  for="nombre">Nombre</label>
+        <input type="text" name="nombre"/>
+      </div>
+      <div class="b">
+       <label  for="mail">Email</label>
+       <input type="email" name="mail" placeholder="ejemplo@mail.com">
+      </div>
+     <div class="c">
+       <label  for="oferta">Desea recibir nuestras ofertas?</label>
+       <input type="checkbox" name="oferta" value="si">
+     </div>
+     <div class="d">
+       <label for="modelo">Modelo de mueble</label>
+       <select name="Modelo">
+         <option>Vintage</option>
+         <option>Algarrobo</option>
+       </select>
+     </div>
+     <div class="e">
+       <textarea rows="8" cols="70" placeholder="Escribinos!"></textarea>
+     </div>
+     <div class="f">
+       <input class="form__submit" type="submit" value="Enviar formulario"/>
+       <input class="form__reset" type="reset" value="Limpiar formulario"/>
+    </div>
+    </form>
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
+
