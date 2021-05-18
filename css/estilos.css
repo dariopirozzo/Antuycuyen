@@ -15,6 +15,9 @@ body {
   height: 100%;
   width: 100%; }
 
+.ftam{
+  font-size: 1em;
+}
 .colo__rosa {
   background-color: #f98989; }
 
@@ -71,7 +74,11 @@ body {
   font-weight: 2em;
   display: grid;
   padding: 2px;
-  grid-template-areas: "consulta consulta consulta" "nombre nombre texto"  "mail check texto"  "modelo modelo texto"  "boton boton boton";
+  grid-template-areas: "consulta consulta consulta"
+ "nombre nombre texto" 
+ "mail check texto" 
+ "modelo modelo texto" 
+ "boton boton boton";
   grid-template-rows: 40px auto auto auto auto;
   grid-template-columns: 2fr 5fr 4fr;
   grid-column-gap: 2px;
